@@ -1,0 +1,41 @@
+<div class="outsidebox">
+  <div class="listbox">
+    <p class='list'>
+        Your List<br>
+        <hr class="line">
+        <a href="/new"><button class="button" type="button" name="button">Add a Product</button></a>
+    </p>
+    <hr class="line">
+    <table>
+      <thead>
+        <tr>
+          <td>
+            Product Name
+          </td>
+          <td>
+            Quantity
+          </td>
+          <td>
+            Check it off
+          </td>
+        </tr>
+      </thead>
+      <% @products.each do |item| %>
+      <tr>
+        <td>
+          <%= item.name %>
+        </td>
+        <td>
+          <%= item.quantity %>
+        </td>
+        <td>
+          <%= form_for item, url: {action: 'delete'} do |f| %>
+          <%= f.hidden_field :id %>
+          <%= f.submit 'Delete' %>
+        </td>
+      </tr>
+    </table>
+    <% end %>
+    <% end %>
+  </div>
+</div>

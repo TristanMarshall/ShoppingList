@@ -1,0 +1,94 @@
+ body {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  margin-top:0px;
+  margin-right:0px;
+  margin-bottom:0px;
+  margin-left: 0px;
+  background-image: url("http://rccatalyst.com/wp-content/uploads/2015/06/blueberries.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.name {
+  font-family:'Cinzel Decorative', cursive;
+  font-size: 5.5vw;
+  text-align: center;
+  color: rgb(17, 55, 84);
+}
+
+.list {
+  font-family: 'News Cycle', sans-serif;
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.list1 {
+  font-family: 'News Cycle', sans-serif;
+  font-size: 1.6vw;
+  text-align: center;
+}
+
+.button {
+  font-family:'News Cycle', sans-serif;
+  font-size: 1.5vw;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border: 4px solid rgb(170, 231, 208);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+:hover.button {
+  background-color: rgb(17, 55, 84);
+  color: white;
+}
+
+.outsidebox {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.listbox {
+  width: 70%;
+  background-color: white;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  border: 5px solid rgb(17, 55, 84);
+}
+
+.namebox {
+  width: 75%;
+  height: auto;
+  margin-left: 12.5%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  padding-top: 4%;
+  padding-bottom: 1%;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.listbox1 {
+  width: 70%;
+  height: auto;
+  background-color: white;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  border: 5px solid rgb(17, 55, 84);
+  z-index: 100;
+}
+
+
+.line {
+  width: 90%;
+}

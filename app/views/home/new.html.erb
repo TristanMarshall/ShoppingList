@@ -1,0 +1,12 @@
+
+<div class="outsidebox">
+  <div class="listbox">
+    <h1 class='list'>Add New Product To List</h1>
+    <%= form_for @product, url: {action: 'create'}, html: {class: 'formedit'} do |f| %>
+      Item: <%= f.text_field :name %>
+      Quantity: <%= f.text_field :quantity, html: {type: 'number'} %>
+      <%= f.submit 'Add item to list'%>
+    <% end %>
+    <a href="/"><button class="button" type="button" name="button">Return to your list</button></a>
+  </div>
+</div>
