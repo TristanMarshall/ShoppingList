@@ -1,13 +1,18 @@
 Rails.application.routes.draw do
+
+  #login/sessions
+  get 'users/login' => 'sessions#new'
+  post 'sessions/create' => 'sessions#create'
+  get 'users/logout' => 'sessions#delete'
+
+## user registration
   get 'users/signup' => 'users#new'
   post 'users/create' => 'users#create'
 
+## actual shopping list
   get '/' => 'home#index'
-
   get '/new' => 'home#new'
-
   post '/create' => 'home#create'
-
   patch '/delete' => 'home#delete'
 
 
