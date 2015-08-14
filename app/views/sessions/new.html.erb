@@ -1,13 +1,13 @@
-<h3>Login</h3>
-
-<% if @message.nil? == false %>
-<strong><%= @message %> </strong>
-<% end %>
-
-<%= form_tag '/sessions/create' do %>
-
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag 'Log in!' %>
-
-<% end %>
+<div class='outsidebox'>
+  <div class="listbox">
+    <h3 class="list">Login</h3>
+    <% if @message.nil? == false %>
+    <strong><%= @message %> </strong>
+    <% end %>
+    <%= form_tag '/sessions/create', :class => "usercreateform" do %>
+    <span class="fieldname">Email:</span><br> <%= text_field_tag :email, '', class:'inputbox' %><br>
+    <span class="fieldname">Password:</span><br> <%= password_field_tag :password, '', class:'inputbox' %><br>
+    <%= submit_tag 'Log in!', :class => 'button1'%>
+    <% end %>
+  </div>
+</div>

@@ -1,15 +1,17 @@
-<h2>Signup</h2>
-
-<% if @message.nil? == false %>
-<strong><%= @message %> </strong>
-<% end %>
-
-<%= form_for :user, url: '/users/create' do |f| %>
-
-Name: <%= f.text_field :name %>
-Email: <%= f.text_field :email %>
-Password: <%= f.password_field :password %>
-Confirm Password: <%= f.password_field :password_confirmation %>
-<%= f.submit 'Register Now!' %>
-
-<% end %>
+<div class='outsidebox'>
+  <div class="listbox">
+    <hr class="line">
+    <h2 class="list">Signup</h2>
+    <hr class="line">
+    <% if @message.nil? == false %>
+    <strong><%= @message %> </strong>
+    <% end %>
+    <%= form_for :user, url: '/users/create',:html => {:class => "usercreateform"} do |f| %>
+      <span class="fieldname">Name:</span><br> <%= f.text_field :name, class: 'inputbox'%><br>
+      <span class="fieldname">Email:</span><br> <%= f.text_field :email, class: 'inputbox'%><br>
+      <span class="fieldname">Password:</span><br> <%= f.password_field :password, class: 'inputbox'%><br>
+      <span class="fieldname">Confirm Password:</span><br> <%= f.password_field :password_confirmation, class: 'inputbox'%>
+      <%= f.submit 'Register Now!', :class => 'button1'%>
+    <% end %>
+  </div>
+</div>

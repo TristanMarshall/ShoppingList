@@ -24,6 +24,8 @@
   margin-bottom:0px;
   margin-left: 0px;
   background-image: url("http://www.annabellebreakey.com/wp-content/uploads/2015/02/abreakey-foodphotography-fruitvegetablestilllife.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav {
@@ -45,18 +47,18 @@ nav {
 }
 
 .name1 {
-    font-family: 'News Cycle', sans-serif;
-    margin-bottom: 2%;
-    margin-top: -4%;
-    margin-left: 17%;
-    font-size: 1.7vw;
+  font-family: 'News Cycle', sans-serif;
+  margin-bottom: 2%;
+  margin-top: -4%;
+  margin-left: 17%;
+  font-size: 1.7vw;
 }
 
 .list {
   font-family: 'News Cycle', sans-serif;
   font-size: 2.5vw;
   text-align: center;
-  margin-top: 6%;
+  margin-top: 1%;
 }
 
 .list1 {
@@ -74,13 +76,32 @@ nav {
   margin-left: 10%;
   margin-bottom: 2%;
   margin-top: 2%;
-  border: 4px solid gray;
+  border: none;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
 :hover.button {
-  background-color: rgb(17, 55, 84);
+  background-color: rgb(144, 237, 163);
+  color: white;
+}
+
+.button1 {
+  font-family:'News Cycle', sans-serif;
+  color: white;
+  background-color: rgb(24, 62, 29);
+  font-size: 1.5vw;
+  width: 80%;
+  margin-left: -6%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border: none;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+:hover.button1 {
+  background-color: rgb(144, 237, 163);
   color: white;
 }
 
@@ -128,7 +149,31 @@ nav {
 .line {
   width: 90%;
 }
- .tabb {
+.tabb {
    font-family: 'News Cycle', sans-serif;
    font-size: 1.9vw;
- }
+  }
+
+.inputbox {
+   margin-top: 1%;
+   margin-bottom: 1%;
+   font-family: 'News Cycle', sans-serif;
+   width: 65%;
+   margin-left: 1.6%;
+}
+
+.inputtag {
+  font-family: 'News Cycle', sans-serif;
+}
+
+.usercreateform {
+  font-family: 'News Cycle', sans-serif;
+  font-size: 1.5vw;
+  margin-left: 25%;
+}
+
+.fieldname {
+  margin-left: 2%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
