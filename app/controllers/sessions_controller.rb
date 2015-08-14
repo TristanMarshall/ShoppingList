@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
     @message = "Username or password is incorrect"
     render '/sessions/new'
   end
+end 
 
   def delete
     #delete/destroy the session

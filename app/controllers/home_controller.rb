@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   ##before any user accesses a resource
-  ## we filter out those that are not logged in 
+  ## we filter out those that are not logged in
   before_filter :authorize
 
   def index
@@ -31,5 +31,4 @@ class HomeController < ApplicationController
   def product_params
     params.require(:product).permit(:name, :quantity)
   end
-
 end
