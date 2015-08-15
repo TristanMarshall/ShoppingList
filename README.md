@@ -1,6 +1,6 @@
 ## Shopping List Ruby on Rails CRUD application
 
-##### This is the readme.md file for the Shopping List application. The primary purpose of this site is to showcase an example of a fully functional, CRUD application built on Ruby on Rails.
+##### This is the readme.md file for the Shopping List application. The primary purpose of this site is to showcase an example of a fully functional, CRUD application built on Ruby on Rails. This is my first Ruby on Rails application. 
 
 ##### Shopping List allows the user to do the following:
 * Create a user login
